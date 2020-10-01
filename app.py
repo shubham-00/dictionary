@@ -18,7 +18,7 @@ def translate(word):
 		similar_words = get_close_matches(word, dictionary.keys(), n = 10, cutoff = 0.8)	# n => Number of words it may return at max	# cutoff => Words should match atleast cutoff or more
 
 		if len(similar_words) == 0:
-			return "Sorry, word doesn't exist in the dictionary"
+			return "Sorry, word doesn't exist in the dictionary."
 
 		else:
 			print('Sorry, cannot find that word, check out similar words.')
